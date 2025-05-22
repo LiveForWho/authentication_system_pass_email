@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   verifyOTPExpireAt: { type: Number, default: 0 },
   isAccountVerified: { type: Boolean, default: false },
   resetOTP: { type: String, default: "" },
-  resetOTPExpireAt: { type: Number, required: 0 },
+  resetOTPExpireAt: { type: Number, default: 0 },
 });
 
 const User = mongoose.models.user || mongoose.model("user", userSchema);
