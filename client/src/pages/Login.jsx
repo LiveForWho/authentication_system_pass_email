@@ -75,6 +75,7 @@ const Login = () => {
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 type="text"
+                className="bg-transparent outline-none"
                 placeholder="Full Name"
                 required
               />
@@ -90,6 +91,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               type="email"
+              className="bg-transparent outline-none"
               placeholder="Email"
               required
             />
@@ -103,6 +105,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               type="password"
+              className="bg-transparent outline-none"
               placeholder="Password"
               required
             />
